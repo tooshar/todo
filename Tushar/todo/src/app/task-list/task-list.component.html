@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let t of t let i = index;">
+    <input type="checkbox" (change)= "onChecked(t,i)"/> {{t}}
+  </li>
+</ul>
