@@ -1,0 +1,17 @@
+<div >
+  <h3>Tasks List Here!!!</h3>
+  <ul>
+    <li *ngFor="let todo of todos let index=index">
+      <input type="checkbox"  (change)="onCheck(todo,index)"/>
+       {{todo}}
+      </li>
+  </ul>
+
+</div>
+
+<hr>
+
+
+<div>
+  <app-completed-list></app-completed-list>
+</div>
